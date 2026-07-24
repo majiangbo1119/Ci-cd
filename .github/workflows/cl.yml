@@ -15,5 +15,6 @@ jobs:
           distribution: 'temurin'
 
       - name: Build Application
-        run: mvn clean install
+        uses: ./mvnw clean package
+        
 
